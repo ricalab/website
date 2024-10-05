@@ -12,9 +12,10 @@ body {
 	color: #333;
 	line-height: 1.6;
 	padding: 0;
+	color: #8d99ae;
 }
 
-/* Header e Menu */
+/* Stile dell'header e del menu */
 header {
 	background-color: #2b2d42;
 	padding: 15px 0;
@@ -43,6 +44,7 @@ nav {
 
 .menu li {
 	margin: 0 20px;
+	position: relative;
 }
 
 .menu a {
@@ -55,6 +57,33 @@ nav {
 
 .menu a:hover {
 	color: #8d99ae;
+}
+
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #2b2d42;
+	top: 100%;
+	left: 0;
+	min-width: 160px;
+	box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.2);
+	z-index: 1;
+}
+
+.dropdown-content a {
+	color: #edf2f4;
+	padding: 12px 16px;
+	display: block;
+	text-align: left;
+	transition: background-color 0.3s ease;
+}
+
+.dropdown-content a:hover {
+	background-color: #8d99ae;
+}
+
+.menu li:hover .dropdown-content {
+	display: block;
 }
 
 /* Stile per la sezione Progetti */
