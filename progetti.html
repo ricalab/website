@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Progetti - Nome Startup</title>
+	<link rel="stylesheet" href="styles-progetti.css">
+	<style>
+    	/* Stile per il carosello */
+    	.carousel {
+        	position: relative;
+        	max-width: 100%;
+        	margin: 20px auto;
+    	}
+
+    	.carousel-images {
+        	display: flex;
+        	overflow: hidden;
+    	}
+
+    	.carousel-images img {
+        	min-width: 100%;
+        	transition: transform 0.5s ease-in-out;
+    	}
+
+    	.prev, .next {
+        	position: absolute;
+        	top: 50%;
+        	transform: translateY(-50%);
+        	background-color: rgba(0, 0, 0, 0.5);
+        	color: white;
+        	padding: 10px;
+        	border: none;
+        	cursor: pointer;
+    	}
+
+    	.prev {
+        	left: 10px;
+    	}
+
+    	.next {
+        	right: 10px;
+    	}
+
+    	/* Dots */
+    	.dots {
+        	text-align: center;
+        	margin-top: 10px;
+    	}
+
+    	.dot {
+        	height: 15px;
+        	width: 15px;
+        	margin: 0 5px;
+        	background-color: #bbb;
+        	border-radius: 50%;
+        	display: inline-block;
+        	transition: background-color 0.6s ease;
+    	}
+
+    	.dot.active {
+        	background-color: #717171;
+    	}
+	</style>
+</head>
+<body>
+	<header>
+    	<nav>
+        	<div class="logo">Nome Startup</div>
+        	<ul class="menu">
+            	<li><a href="index.html">Home</a></li>
+            	<li class="dropdown">
+                	<a href="#" class="dropbtn">Pagine</a>
+                	<div class="dropdown-content">
+                    	<a href="chi-siamo.html">Chi siamo</a>
+                    	<a href="servizi.html">Servizi</a>
+                    	<a href="progetti.html">Progetti</a>
+                    	<a href="team.html">Team</a>
+                    	<a href="contatti.html">Contatti</a>
+                	</div>
+            	</li>
+        	</ul>
+    	</nav>
+	</header>
+
+	<section class="projects">
+    	<h1>I nostri Progetti</h1>
+    	<p>Qui trovi una selezione dei nostri progetti passati che dimostrano la nostra competenza e passione per il lavoro artigianale.</p>
+
+    	<!-- Sezione Progetto Botola -->
+    	<div class="project">
+        	<h2>Progetto: Botola</h2>
+        	<p><strong>Caratteristiche:</strong> Il progetto Botola è un'opera che integra design funzionale e artigianato di precisione. Si tratta di una botola artigianale in legno massello, creata su misura per uno spazio particolare, con un meccanismo di apertura innovativo.</p>
+        	<p><strong>Metodo Utilizzato:</strong> Abbiamo utilizzato tecniche di lavorazione del legno avanzate, combinando metodi tradizionali con strumenti moderni per ottenere la massima precisione. La botola è stata progettata e costruita su misura, assicurando che si integrasse perfettamente nello spazio disponibile.</p>
+        	<p><strong>Storia:</strong> Questo progetto è stato realizzato per una casa storica, dove era necessario creare una botola che rispettasse l'architettura dell'edificio, pur offrendo un sistema moderno e funzionale. Dopo varie consultazioni con il cliente, il progetto è stato avviato con un'attenzione particolare ai dettagli e alla durabilità.</p>
+
+        	<!-- Carosello di immagini -->
+        	<div class="carousel">
+            	<div class="carousel-images">
+                	<img src="Grigliata_1.jpg" alt="Botola immagine 1">
+                	<img src="Grigliata_2.jpg" alt="Botola immagine 2">
+                	<img src="Grigliata_3.jpg" alt="Botola immagine 3">
+            	</div>
+            	<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+            	<button class="next" onclick="changeSlide(1)">&#10095;</button>
+        	</div>
+
+        	<!-- Dots per il carosello -->
+        	<div class="dots">
+            	<span class="dot" onclick="currentSlide(1)"></span>
+            	<span class="dot" onclick="currentSlide(2)"></span>
+            	<span class="dot" onclick="currentSlide(3)"></span>
+        	</div>
+    	</div>
+	</section>
+
+	<footer>
+    	<p>© 2024 Nome Startup. Tutti i diritti riservati.</p>
+	</footer>
+
+	<script>
+    	let slideIndex = 0;
+    	showSlides();
+
+    	function showSlides() {
+        	let slides = document.querySelectorAll('.carousel-images img');
+        	let dots = document.querySelectorAll('.dot');
+        	for (let i = 0; i < slides.length; i++) {
+            	slides[i].style.display = 'none';
+        	}
+        	slideIndex++;
+        	if (slideIndex > slides.length) {
+            	slideIndex = 1;
+        	}
+        	for (let i = 0; i < dots.length; i++) {
+            	dots[i].className = dots[i].className.replace(' active', '');
+        	}
+        	slides[slideIndex - 1].style.display = 'block';
+        	dots[slideIndex - 1].className += ' active';
+        	setTimeout(showSlides, 3000); // Cambia immagine ogni 3 secondi
+    	}
+
+    	function changeSlide(n) {
+        	slideIndex += n;
+        	if (slideIndex < 1) {
+            	slideIndex = document.querySelectorAll('.carousel-images img').length;
+        	}
+        	if (slideIndex > document.querySelectorAll('.carousel-images img').length) {
+            	slideIndex = 1;
+        	}
+        	showSlides();
+    	}
+
+    	function currentSlide(n) {
+        	slideIndex = n;
+        	showSlides();
+    	}
+	</script>
+</body>
+</html>
+
+
+
