@@ -1,0 +1,196 @@
+/* Reset CSS per compatibilità cross-browser */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+/* Stile per il corpo */
+body {
+	font-family: 'Poppins', sans-serif;
+	background-color: #f0f0f0;
+	color: #333;
+	line-height: 1.6;
+	padding: 0;
+}
+
+/* Header e Menu */
+header {
+	background-color: #2b2d42;
+	padding: 15px 0;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+	position: sticky;
+	top: 0;
+	z-index: 1000;
+}
+
+nav {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 90%;
+	margin: 0 auto;
+}
+
+.logo {
+	font-size: 28px;
+	font-weight: bold;
+	color: #edf2f4;
+	letter-spacing: 2px;
+}
+
+.menu {
+	list-style: none;
+	display: flex;
+}
+
+.menu li {
+	margin: 0 20px;
+}
+
+.menu a {
+	color: #edf2f4;
+	text-decoration: none;
+	padding: 10px 15px;
+	font-weight: 500;
+	transition: color 0.3s ease, background-color 0.3s ease;
+	border-radius: 5px;
+}
+
+.menu a:hover {
+	color: #d90429;
+	background-color: #edf2f4;
+}
+
+/* Sezione contatti */
+.contact-us {
+	padding: 60px 20px;
+	text-align: center;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.contact-us h1 {
+	font-size: 36px;
+	color: #2b2d42;
+	margin-bottom: 20px;
+}
+
+.contact-us p {
+	font-size: 18px;
+	color: #555;
+	line-height: 1.8;
+	max-width: 800px;
+	margin: 0 auto 30px auto;
+}
+
+/* Informazioni di contatto */
+.contact-info {
+	display: flex;
+	justify-content: space-around;
+	margin-bottom: 40px;
+}
+
+.info {
+	background-color: #fff;
+	padding: 20px;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	width: 30%;
+	text-align: center;
+}
+
+.info h2 {
+	font-size: 24px;
+	color: #2b2d42;
+	margin-bottom: 10px;
+}
+
+.info p {
+	font-size: 16px;
+	color: #555;
+}
+
+.info a {
+	color: #d90429;
+	text-decoration: none;
+}
+
+.info a:hover {
+	text-decoration: underline;
+}
+
+/* Mappa Google Maps */
+.map {
+	margin: 40px 0;
+}
+
+/* Bottone contattaci */
+.contact-button {
+	margin-top: 30px;
+}
+
+.btn {
+	padding: 15px 30px;
+	background-color: #ef233c;
+	color: #edf2f4;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 30px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #d90429;
+	transform: scale(1.05);
+}
+
+/* Footer */
+footer {
+	background-color: #2b2d42;
+	color: #edf2f4;
+	text-align: center;
+	padding: 30px;
+	width: 100%;
+}
+
+footer p {
+	margin: 10px 0;
+	font-size: 14px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+	.contact-info {
+    	flex-direction: column;
+    	align-items: center;
+	}
+
+	.info {
+    	width: 80%;
+    	margin-bottom: 20px;
+	}
+
+	.contact-button {
+    	margin-top: 20px;
+	}
+}
+
+@media (max-width: 480px) {
+	.contact-us h1 {
+    	font-size: 28px;
+	}
+
+	.contact-us p {
+    	font-size: 16px;
+	}
+
+	.info {
+    	width: 100%;
+	}
+
+	.btn {
+    	font-size: 16px;
+	}
+}
