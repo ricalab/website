@@ -195,3 +195,56 @@ footer p {
     	padding: 30px;
 	}
 }
+
+/* Sezione Scopri i Progetti */
+.discover-projects {
+	background-color: #edf2f4;
+	padding: 80px 20px;
+	text-align: center;
+}
+
+.discover-projects h2 {
+	font-size: 36px;
+	color: #2b2d42;
+	margin-bottom: 20px;
+}
+
+.discover-projects p {
+	font-size: 18px;
+	color: #555;
+	max-width: 800px;
+	margin: 0 auto 30px auto;
+}
+
+.btn {
+	padding: 15px 30px;
+	background-color: #ef233c;
+	color: #edf2f4;
+	text-decoration: none;
+	font-size: 18px;
+	font-weight: bold;
+	border-radius: 30px;
+	transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn:hover {
+	background-color: #d90429;
+	transform: scale(1.05);
+}
+
+/* Responsive design for discover-projects */
+@media (max-width: 768px) {
+	.discover-projects h2 {
+    	font-size: 30px;
+	}
+
+	.discover-projects p {
+    	font-size: 16px;
+	}
+
+	.btn {
+    	padding: 10px 20px;
+    	font-size: 16px;
+	}
+}
+
