@@ -114,7 +114,7 @@ nav {
 	margin-top: 40px;
 }
 
-.contattaci_title{
+.contattaci_title h2{
 	font-size: 24px;	
   	font-weight: bold;
 }
@@ -161,7 +161,7 @@ nav {
 
 .btn {
 	padding: 15px 30px;
-	background-color: white;
+	background-color: none;
 	color: #edf2f4;
 	text-decoration: none;
 	font-size: 18px;
