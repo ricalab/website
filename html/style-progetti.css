@@ -120,14 +120,14 @@ nav {
 }
 
 .carousel-images img {	/* Media query per pc*/
-  width: 100%;  /* Assicurati che le immagini occupino l'intero contenitore */
+  width: 45%;  /* Assicurati che le immagini occupino l'intero contenitore */
   height: auto; /* Mantieni proporzioni corrette */
 }
 
 		
 @media (max-width: 768px) { /* Media query per tablet (larghezza max di 768px) */
   .carousel-images img {
-    width: 80%;  /* Rimpicciolisci leggermente l'immagine sui tablet */
+    width: 65%;  /* Rimpicciolisci leggermente l'immagine sui tablet */
     height: auto;
   }
 }
