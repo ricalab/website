@@ -121,6 +121,26 @@ nav {
 	transition: transform 0.5s ease-in-out;
 }
 
+.carousel-images img {	/* Media query per pc*/
+  width: 100%;  /* Assicurati che le immagini occupino l'intero contenitore */
+  height: auto; /* Mantieni proporzioni corrette */
+}
+
+		
+@media (max-width: 768px) { /* Media query per tablet (larghezza max di 768px) */
+  .carousel-images img {
+    width: 80%;  /* Rimpicciolisci leggermente l'immagine sui tablet */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) { /* Media query per smartphone (larghezza max di 480px) */
+  .carousel-images img {
+    width: 100%;  /* Puoi anche renderle leggermente più piccole se necessario */
+    height: auto;
+  }
+}
+
 .prev, .next {
 	position: absolute;
 	top: 50%;
