@@ -106,7 +106,6 @@ nav {
 /* Stile per il carosello */
 .carousel {
 	position: relative;
-	width: 45%;
 	margin: 20px 0;
 }
 
@@ -117,7 +116,6 @@ nav {
 }
 
 .carousel-images img {
-	min-width: 100%;
 	transition: transform 0.5s ease-in-out;
 }
 
