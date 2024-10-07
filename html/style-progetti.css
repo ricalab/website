@@ -86,6 +86,9 @@ nav {
 	text-align: left;
 }
 
+.project{
+}
+
 .project h2 {
 	font-size: 28px;
 	color: #2b2d42;
@@ -102,7 +105,7 @@ nav {
 /* Stile per il carosello */
 .carousel {
 	position: relative;
-	max-width: 100%;
+	width: 45%;
 	margin: 20px 0;
 }
 

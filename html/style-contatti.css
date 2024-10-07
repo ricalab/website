@@ -111,6 +111,12 @@ nav {
 	display: flex;
 	justify-content: space-around;
 	margin-bottom: 40px;
+	margin-top: 40px;
+}
+
+.contattaci_title{
+	font-size: 24px;	
+  	font-weight: 900;
 }
 
 .info {
@@ -149,23 +155,26 @@ nav {
 
 /* Bottone contattaci */
 .contact-button {
-	margin-top: 30px;
+	margin-top: 20px;
 }
 
 .btn {
 	padding: 15px 30px;
-	background-color: #ef233c;
+	background-color: none;
 	color: #edf2f4;
 	text-decoration: none;
 	font-size: 18px;
 	font-weight: bold;
 	border-radius: 30px;
+	border: 2px solid #d90429;
 	transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 .btn:hover {
+	color: white;
 	background-color: #d90429;
 	transform: scale(1.05);
+	border: 2px solid #d90429;
 }
 
 /* Footer */
