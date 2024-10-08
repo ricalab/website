@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<title>Progetti - R&D | Ricaldone</title>
+	<link rel="stylesheet" href="style-progetti.css">
+	<style>
+    	/* Stile per il carosello */
+    	.carousel {
+        	position: relative;
+        	max-width: 100%;
+        	margin: 20px auto;
+    	}
+
+    	.carousel-images {
+        	display: flex;
+        	overflow: hidden;
+    	}
+
+    	.carousel-images img {
+        	min-width: 100%;
+        	transition: transform 1s ease-in-out;
+    	}
+
+    	.prev, .next {
+        	position: absolute;
+        	top: 50%;
+        	transform: translateY(-50%);
+        	background-color: rgba(0, 0, 0, 0.5);
+        	color: white;
+        	padding: 10px;
+        	border: none;
+        	cursor: pointer;
+    	}
+
+    	.prev {
+        	left: 10px;
+    	}
+
+    	.next {
+        	right: 10px;
+    	}
+
+    	/* Dots */
+    	.dots {
+        	text-align: center;
+        	margin-top: 10px;
+    	}
+
+    	.dot {
+        	height: 15px;
+        	width: 15px;
+        	margin: 0 5px;
+        	background-color: #bbb;
+        	border-radius: 50%;
+        	display: inline-block;
+        	transition: background-color 0.6s ease;
+    	}
+
+    	.dot.active {
+        	background-color: #717171;
+    	}
+	</style>
+</head>
+<body>
+	<header>
+    	<nav>
+        	<div class="logo"><a href="home.html">Ricalab</a></div>
+        	<ul class="menu">
+            	<li><a href="home.html">Home</a></li>
+            	<li class="dropdown">
+                	<a href="#" class="dropbtn">Pagine</a>
+                	<div class="dropdown-content">
+                    	<a href="chi-siamo.html">Chi siamo</a>
+                    	<a href="servizi.html">Servizi</a>
+                    	<a href="progetti.html">Progetti</a>
+                    	<a href="team.html">Team</a>
+                    	<a href="contatti.html">Contatti</a>
+                	</div>
+            	</li>
+        	</ul>
+    	</nav>
+	</header>
+
+	<section class="projects">
+    	<h1>I nostri Progetti</h1>
+    	<p>Qui trovi una selezione dei nostri progetti passati.</p><br/>
+
+    	<div class="contenitore">
+	    	<div class="project">
+	        	<h2>Progetto: E-POT</h2>
+	        	<p><strong>Obiettivo:</strong><br/>Realizzare un vaso che possa, in totale autonomia, prendersi cura della pianta che
+	ospita. Mantenere ben idratato il terreno, controllare che la pianta sia esposta alla
+	giusta intensità luminosa e temperatura, avvisare l’utente quando è necessario
+	riempire il serbatoio dell’acqua e trascrivere tutte le informazioni utili su monitor e
+	tramite notifica su smartphone (bluetooth) sono le principali caratteristiche che
+	descrivono questo dispositivo.
+	È stato ideato come un dispositivo domestico che entri a far parte delle nostre vite
+	quotidiane, basta appoggiarlo su una superficie abbastanza illuminata e si prenderà
+	cura di ogni pianta a lui affidata; versatile sia in cucina (spezie) che per piante
+	d'arredo o per giardinaggio d'appartamento.</p>
+	        	<p><strong>Progetto ECO:</strong><br/>La sua struttura principale, il vaso superiore ed il serbatoio sono realizzati in ASA
+	riciclato (Azure Film) per mezzo della stampa 3D. L'alimentazione elettrica avviene
+	mediante pannelli fotovoltaici posti sulle 4 pareti, questi generano tutta l'energia di
+	cui ha bisogno mentre l'energia in eccesso viene stoccata in una batteria interna che
+	consente il funzionamento notturno. Il monitor scelto per questo dispositivo funziona
+	a bassissimo consumo energetico così come la scheda elettronica.
+	Quindi il vaso è realizzato al 90% da materiali riciclati, fa uso di energia pulita e ne
+	consuma il meno possibile per prendersi cura della pianta affidatagli</p>
+	        	<p><strong>Funzionalità:</strong><br/>
+	Le funzionalità di questo dispositivo sono minime ed efficaci perché possa eseguire
+	tutto ciò si propone come obiettivo nella massima efficienza.
+	In primis aiuta l'utente a trovare la giusta locazione: un posto che abbia la giusta
+	temperatura e luminosità per mantenere in "vita" sia il vaso che la pianta. Attraverso
+	un attuatore (pompa interna) mantiene il terreno della pianta nel giusto stato di
+	idratazione, dato costantemente monitorato da un sensore presente nel terreno. Sul
+	monitor vengono illustrati il nome (a discrezione dell'utente) e la tipologia della
+	pianta, la temperatura attuale, il livello dell'acqua, se è giorno o notte e, quando
+	necessario, un avviso per il riempimento del serbatoio o che riguardi qualche
+	necessità della pianta</p>
+				<br/>
+	        	<!-- Carosello di immagini -->
+	        	<div class="carousel">
+	            	<div class="carousel-images">
+	                	<img src="IMG-20240229-WA0102.jpg" alt="E-POT">
+	                	<img src="IMG_20230913_062743.jpg" alt="Costruzione DEMO">
+	                	<img src="IMG_20230914_224230.jpg" alt="Costruzione DEMO">
+	            	</div>
+	            	<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
+	            	<button class="next" onclick="changeSlide(1)">&#10095;</button>
+	        	</div>
+
+	        	<!-- Dots per il carosello -->
+	        	<div class="dots">
+	            	<span class="dot" onclick="currentSlide(1)"></span>
+	            	<span class="dot" onclick="currentSlide(2)"></span>
+	            	<span class="dot" onclick="currentSlide(3)"></span>
+	        	</div>
+	    	</div>
+		</div>
+	</section>
+
+	<footer>
+    	<p>© 2024 Nome Startup. Tutti i diritti riservati.</p>
+	</footer>
+
+	<script>
+    	let slideIndex = 0;
+    	showSlides();
+
+    	function showSlides() {
+        	let slides = document.querySelectorAll('.carousel-images img');
+        	let dots = document.querySelectorAll('.dot');
+        	for (let i = 0; i < slides.length; i++) {
+            	slides[i].style.display = 'none';
+        	}
+        	slideIndex++;
+        	if (slideIndex > slides.length) {
+            	slideIndex = 1;
+        	}
+        	for (let i = 0; i < dots.length; i++) {
+            	dots[i].className = dots[i].className.replace(' active', '');
+        	}
+        	slides[slideIndex - 1].style.display = 'block';
+        	dots[slideIndex - 1].className += ' active';
+        	setTimeout(showSlides, 3000); // Cambia immagine ogni 3 secondi
+    	}
+
+    	function changeSlide(n) {
+        	slideIndex += n;
+        	if (slideIndex < 1) {
+            	slideIndex = document.querySelectorAll('.carousel-images img').length;
+        	}
+        	if (slideIndex > document.querySelectorAll('.carousel-images img').length) {
+            	slideIndex = 1;
+        	}
+        	showSlides();
+    	}
+
+    	function currentSlide(n) {
+        	slideIndex = n;
+        	showSlides();
+    	}
+	</script>
+</body>
+</html>
+
+
+

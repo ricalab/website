@@ -16,6 +16,7 @@ body {
 }
 
 /* Stile dell'header e del menu */
+/* Stile dell'header e del menu */
 header {
 	background-color: #2b2d42;
 	padding: 15px 0;
@@ -35,6 +36,11 @@ nav {
 	font-weight: bold;
 	color: #edf2f4;
 	letter-spacing: 2px;
+}
+
+.logo a{
+	color: white;
+	text-decoration: none;
 }
 
 .menu {
@@ -63,6 +69,7 @@ nav {
 	display: none;
 	position: absolute;
 	background-color: #2b2d42;
+	padding-top: 25px;
 	top: 100%;
 	left: 0;
 	min-width: 160px;
@@ -80,11 +87,13 @@ nav {
 
 .dropdown-content a:hover {
 	background-color: #8d99ae;
+	color: #2b2d42;
 }
 
 .menu li:hover .dropdown-content {
 	display: block;
 }
+
 
 /* Stile per le sezioni principali */
 section {

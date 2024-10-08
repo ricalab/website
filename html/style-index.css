@@ -35,6 +35,11 @@ nav {
 	letter-spacing: 2px;
 }
 
+.logo a{
+	color: white;
+	text-decoration: none;
+}
+
 .menu {
 	list-style: none;
 	display: flex;
@@ -61,6 +66,7 @@ nav {
 	display: none;
 	position: absolute;
 	background-color: #2b2d42;
+	padding-top: 25px;
 	top: 100%;
 	left: 0;
 	min-width: 160px;
@@ -78,11 +84,14 @@ nav {
 
 .dropdown-content a:hover {
 	background-color: #8d99ae;
+	color: #2b2d42;
 }
 
 .menu li:hover .dropdown-content {
 	display: block;
 }
+
+
 /* Hero section */
 .hero {
 	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
