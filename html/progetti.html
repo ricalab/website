@@ -28,75 +28,32 @@
 	</header>
 
 	<section class="projects">
-    	<h1>I nostri Progetti</h1>
-    	<p>Qui trovi una selezione dei nostri progetti passati.</p><br/>
+		<br/>
+    	<p align="center" class="titolo-progetto">I nostri Progetti</p>
+    	<p align="center">Qui trovi una selezione dei nostri progetti passati.</p><br/>
 
     	<div class="contenitore">
 	    	<div class="project">
-	    		descriione progetto
+	    		<br/>
+	    		<h2>E-POT</h2>
+	    		<br/>
+	    		descrizione breve
 	    	</div>
         	<!-- Carosello di immagini -->
         	<div class="carousel">
             	<div class="carousel-images">
                 	<img src="IMG-20240229-WA0102.jpg" alt="E-POT">
-                	<img src="IMG_20230913_062743.jpg" alt="Costruzione DEMO">
-                	<img src="IMG_20230914_224230.jpg" alt="Costruzione DEMO">
             	</div>
-            	<button class="prev" onclick="changeSlide(-1)">&#10094;</button>
-            	<button class="next" onclick="changeSlide(1)">&#10095;</button>
         	</div>
-
-        	<!-- Dots per il carosello 
-        	<div class="dots">
-            	<span class="dot" onclick="currentSlide(1)"></span>
-            	<span class="dot" onclick="currentSlide(2)"></span>
-            	<span class="dot" onclick="currentSlide(3)"></span>
-        	</div> -->
 	    </div>
 	</section>
+
+	<br/>
+	<br/>
 
 	<footer>
     	<p>© 2024 Nome Startup. Tutti i diritti riservati.</p>
 	</footer>
-
-	<script>
-    	let slideIndex = 0;
-    	showSlides();
-
-    	function showSlides() {
-        	let slides = document.querySelectorAll('.carousel-images img');
-        	let dots = document.querySelectorAll('.dot');
-        	for (let i = 0; i < slides.length; i++) {
-            	slides[i].style.display = 'none';
-        	}
-        	slideIndex++;
-        	if (slideIndex > slides.length) {
-            	slideIndex = 1;
-        	}
-        	for (let i = 0; i < dots.length; i++) {
-            	dots[i].className = dots[i].className.replace(' active', '');
-        	}
-        	slides[slideIndex - 1].style.display = 'block';
-        	dots[slideIndex - 1].className += ' active';
-        	setTimeout(showSlides, 3000); // Cambia immagine ogni 3 secondi
-    	}
-
-    	function changeSlide(n) {
-        	slideIndex += n;
-        	if (slideIndex < 1) {
-            	slideIndex = document.querySelectorAll('.carousel-images img').length;
-        	}
-        	if (slideIndex > document.querySelectorAll('.carousel-images img').length) {
-            	slideIndex = 1;
-        	}
-        	showSlides();
-    	}
-
-    	function currentSlide(n) {
-        	slideIndex = n;
-        	showSlides();
-    	}
-	</script>
 </body>
 </html>
 
