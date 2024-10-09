@@ -36,6 +36,11 @@ nav {
 	text-decoration:;
 }
 
+.logo a{
+	color: #edf2f4;
+	text-decoration: none;
+}
+
 .menu {
 	list-style: none;
 	display: flex;
@@ -91,19 +96,48 @@ nav {
 
 .contenitore{
   text-align: center;
-	width: 100%;
+	width: 80%;
+	margin-left: 10%;
   display: flex;
   flex-flow: row;
   text-align: center;
   background-color: #e0e1eb;
+	border: 1px solid none;
+	border-radius: 60px;
+	padding: 5px;
 }
 
 .project{
 	width: 50%;
 	background-color: #e0e1eb;
+	border-radius: 60px;
+	padding: 20px;
 }
 
-@media (max-width: 700px) { /* 768pxMedia query per tablet e tell(larghezza max di 768px) */
+.descrizione-progetto{
+  text-align: justify;
+}
+
+.carousel{
+	width: 50%;
+	background-color: none;
+	padding: 1%;
+}
+
+.carousel-images img{
+	width: 40%;
+	background-color: none;
+  border: 2px solid none;
+  border-radius: 45px;
+}
+
+.titolo-progetto{
+	font-size: 24px;
+	font-weight: bold;
+	color: #2b2d42;
+}
+
+@media (max-width: 1000px) { /* 768pxMedia query per tablet e tell(larghezza max di 768px) */
 	.contenitore{
 		width: 85%;
 		margin-left: 7.5%;
