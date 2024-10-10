@@ -110,7 +110,7 @@ nav {
 .div-contenitore{
   	text-align: justify;
 	background-color: #2b2d42;
-	border: 3px solid #2b2d42;
+	border: 8px solid #2b2d42;
 	display: flex;
     align-items: center;
 	width: 90%;
@@ -136,6 +136,51 @@ nav {
 	float: right;
 	padding: 5%;
 	border-radius: 0px 40px 40px 0px;
+}
+
+.div-contenitore-tasto{
+  	text-align: center;
+	background-color: none;
+	display: flex;
+    align-items: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 3%;
+	border-radius: 40px;
+}
+
+.indirizzamento{
+	width: 100%;
+	text-align: center;
+}
+
+.indirizzamento p{
+	font-size: 30px;
+	margin-top: 1%;
+}
+
+.tasto-servizi{
+	font-size: 20px;
+	background-color: #2b2d42;
+	color: white;
+	width: 15%;
+	padding: 1%;
+	border-radius: 30px;
+	margin-left: 42.5%;
+	margin-top: 1%;
+	margin-bottom: 1%;
+	transition: 0.5s;
+	border: 3px solid #2b2d42;
+}
+
+.indirizzamento a{
+	text-decoration: none;
+}
+
+.tasto-servizi:hover{
+	background-color: white;
+	color: #2b2d42;
+	transition: 0.5s;
 }
 
 
