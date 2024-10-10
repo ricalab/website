@@ -16,7 +16,6 @@ body {
 }
 
 /* Stile dell'header e del menu */
-/* Stile dell'header e del menu */
 header {
 	background-color: #2b2d42;
 	padding: 15px 0;
@@ -94,166 +93,69 @@ nav {
 	display: block;
 }
 
+/* CORPO PAGINA */
 
-/* Stile per le sezioni principali */
-section {
-	padding: 60px 20px;
-	text-align: center;
-	max-width: 1200px;
-	margin: 0 auto;
+.intro{
+	width: 80%;
+  	text-align: justify;
+	margin-left: 10%;
 }
 
-h1, h2 {
-	font-size: 36px;
-	color: #2b2d42;
-	margin-bottom: 20px;
-	letter-spacing: 1.5px;
-	position: relative;
-}
-
-h1::after, h2::after {
-	content: "";
-	display: block;
-	width: 80px;
-	height: 4px;
-	background-color: #d90429;
-	margin: 10px auto;
-}
-
-/* Stile per i paragrafi */
-p {
-	font-size: 18px;
-	color: #555;
-	line-height: 1.8;
-	max-width: 800px;
-	margin: 0 auto 30px auto;
-}
-
-/* Stile per la sezione 'Chi Siamo' */
-.about-us {
-	background-color: #edf2f4;
-	padding: 80px 20px;
-}
-
-.mission, .vision, .innovation, .purpose {
-	background-color: #fff;
-	margin: 40px 0;
-	padding: 40px;
-	border-radius: 15px;
-	box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
-	transition: transform 0.3s ease-in-out;
-}
-
-.mission:hover, .vision:hover, .innovation:hover, .purpose:hover {
-	transform: translateY(-10px);
-	box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
-}
-
-/* Evidenziare parole chiave */
-strong {
-	color: #d90429;
+.chi-siamo{
 	font-weight: bold;
+	font-size: 20px;
+	color: #2b2d42;
 }
+
+.div-contenitore{
+  	text-align: justify;
+	background-color: #2b2d42;
+	border: 3px solid #2b2d42;
+	display: flex;
+    align-items: center;
+	width: 90%;
+	margin-left: 5%;
+	margin-top: 3%;
+	border-radius: 40px;
+}
+
+.testo{
+	background-color: white;
+	width: 50%;
+  	float: left;
+	padding: 5%;
+	border-radius: 40px 0px 0px 40px;
+}
+.titolo{
+	font-size: 50px;
+	font-weight: bold;
+	color: white;
+  	text-align: center;
+	background-color: none;
+	width: 50%;
+	float: right;
+	padding: 5%;
+	border-radius: 0px 40px 40px 0px;
+}
+
 
 /* Footer */
 footer {
 	background-color: #2b2d42;
 	color: #edf2f4;
 	text-align: center;
-	padding: 30px;
+	padding: 20px;
 	position: relative;
-	bottom: 0;
 	width: 100%;
-	margin-top: 50px;
+	bottom: 0;
 }
 
 footer p {
-	margin: 10px 0;
+	margin-top: 10px;
 	font-size: 14px;
 }
 
 /* Responsive design */
 @media (max-width: 768px) {
-	h1, h2 {
-    	font-size: 30px;
-	}
-
-	p {
-    	font-size: 16px;
-	}
-
-	section {
-    	padding: 40px 20px;
-	}
+	
 }
-
-@media (max-width: 480px) {
-	h1, h2 {
-    	font-size: 26px;
-	}
-
-	p {
-    	font-size: 14px;
-	}
-
-	section {
-    	padding: 30px 15px;
-	}
-
-	.mission, .vision, .innovation, .purpose {
-    	padding: 30px;
-	}
-}
-
-/* Sezione Scopri i Progetti */
-.discover-projects {
-	background-color: #edf2f4;
-	padding: 80px 20px;
-	text-align: center;
-}
-
-.discover-projects h2 {
-	font-size: 36px;
-	color: #2b2d42;
-	margin-bottom: 20px;
-}
-
-.discover-projects p {
-	font-size: 18px;
-	color: #555;
-	max-width: 800px;
-	margin: 0 auto 30px auto;
-}
-
-.btn {
-	padding: 15px 30px;
-	background-color: #ef233c;
-	color: #edf2f4;
-	text-decoration: none;
-	font-size: 18px;
-	font-weight: bold;
-	border-radius: 30px;
-	transition: background-color 0.3s ease, transform 0.3s ease;
-}
-
-.btn:hover {
-	background-color: #d90429;
-	transform: scale(1.05);
-}
-
-/* Responsive design for discover-projects */
-@media (max-width: 768px) {
-	.discover-projects h2 {
-    	font-size: 30px;
-	}
-
-	.discover-projects p {
-    	font-size: 16px;
-	}
-
-	.btn {
-    	padding: 10px 20px;
-    	font-size: 16px;
-	}
-}
-
