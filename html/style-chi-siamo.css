@@ -8,7 +8,7 @@
 /* Stile per il corpo */
 body {
 	font-family: 'Poppins', sans-serif;
-	background-color: #f4f4f4;
+	background-color: #f2f4fa;
 	color: #333;
 	line-height: 1.6;
 	padding: 0;
@@ -35,6 +35,15 @@ nav {
 	font-weight: bold;
 	color: #edf2f4;
 	letter-spacing: 2px;
+}
+
+.logo a{
+	transition-duration: 0.5s;
+}
+
+.logo a:hover{
+	color: #fc2e2e;
+	transition-duration: 0.5s;
 }
 
 .logo a{
@@ -96,35 +105,38 @@ nav {
 /* CORPO PAGINA */
 
 .intro{
-	width: 80%;
+	width: 50%;
   	text-align: justify;
-	margin-left: 10%;
+	margin-left: 25%;
+	background-color: #dedcf5;
+	padding: 2%;
+	border-radius: 20px;
+	margin-bottom: 6%;
+	margin-top: 6%;
 }
 
-.chi-siamo{
-	font-weight: bold;
+.chi-siamo{	font-weight: bold;
 	font-size: 20px;
 	color: #2b2d42;
 }
 
 .div-contenitore{
   	text-align: justify;
-	background-color: #2b2d42;
-	border: 8px solid #2b2d42;
+	background-color: #c1bdea;
+	border: 8px solid #c1bdea;
 	display: flex;
     align-items: center;
-	width: 90%;
-	margin-left: 5%;
-	margin-top: 3%;
-	border-radius: 40px;
+	width: 100%;
+	padding: 1%;
+	font-size: 18px;
 }
 
 .testo{
-	background-color: white;
+	background-color: #e9e7f5;
 	width: 50%;
   	float: left;
 	padding: 5%;
-	border-radius: 40px 0px 0px 40px;
+	border-radius: 40px 40px 40px 40px;
 }
 .titolo{
 	font-size: 50px;
@@ -135,7 +147,7 @@ nav {
 	width: 50%;
 	float: right;
 	padding: 5%;
-	border-radius: 0px 40px 40px 0px;
+	border-radius: 40px 40px 40px 40px;
 }
 
 .div-contenitore-tasto{
@@ -184,6 +196,8 @@ nav {
 }
 
 
+
+
 /* Footer */
 footer {
 	background-color: #2b2d42;
@@ -201,6 +215,60 @@ footer p {
 }
 
 /* Responsive design */
-@media (max-width: 768px) {
-	
+@media (max-width: 900px) {
+	.intro{
+		width: 90%;
+	  	text-align: justify;
+		margin-left: 5%;
+		background-color: #dedcf5;
+		padding: 2%;
+		border-radius: 20px;
+		margin-bottom: 6%;
+		margin-top: 6%;
+	}
+	.testo{
+		background-color: white;
+		width: 100%;
+		padding: 5%;
+		border-radius: 40px 40px 40px 40px;
+	}
+	.titolo{
+		font-size: 50px;
+		font-weight: bold;
+		color: white;
+	  	text-align: center;
+		background-color: none;
+		width: 100%;
+		padding: 5%;
+		border-radius: 40px 40px 40px 40px;
+	}
+	.div-contenitore{
+	  	text-align: justify;
+		background-color: #2b2d42;
+		border: 8px solid #2b2d42;
+		display: inline-block;
+	    align-items: center;
+		width: 90%;
+		margin-left: 5%;
+		margin-top: 3%;
+		border-radius: 40px;
+	}
+
+	.indirizzamento{
+		text-decoration: none;
+		padding-top: 10%;
+	}
+	.tasto-servizi{
+		font-size: 20px;
+		background-color: #2b2d42;
+		color: white;
+		width: 30%;
+		padding: 1%;
+		border-radius: 30px;
+		margin-left: 35%;
+		margin-top: 3%;
+		margin-bottom: 1%;
+		transition: 0.5s;
+		border: 3px solid #2b2d42;
+	}
 }

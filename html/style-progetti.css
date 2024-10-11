@@ -33,10 +33,11 @@ nav {
 	font-weight: bold;
 	color: #edf2f4;
 	letter-spacing: 2px;
+	text-decoration:;
 }
 
 .logo a{
-	color: white;
+	color: #edf2f4;
 	text-decoration: none;
 }
 
@@ -91,191 +92,104 @@ nav {
 	display: block;
 }
 
+/* Stile dei progetti */
 
-/* Stile per la sezione Progetti */
 .contenitore{
-	display: flex; /* Imposta il layout a due colonne */
-  justify-content: space-between; /* Distribuisci spazio tra gli elementi */
-  align-items: flex-start; /* Allinea il testo e le immagini in cima */
-  gap: 20px; 
+  text-align: center;
+	width: 80%;
+	margin-left: 10%;
+  display: flex;
+  flex-flow: row;
+  text-align: center;
+  background-color: #e0e1eb;
+	border: 1px solid none;
+	border-radius: 60px;
+	padding: 5px;
 }
 
-.project-layout .project {
-  flex: 1; /* Il testo occuperà tutto lo spazio disponibile */
-  max-width: 50%; /* Imposta un limite alla larghezza */
+.project{
+	width: 50%;
+	background-color: #e0e1eb;
+	border-radius: 60px;
+	padding: 20px;
 }
 
-.project-layout .carousel {
-  flex: 1; /* Il carosello occuperà lo stesso spazio del testo */
-  max-width: 50%; /* Imposta un limite alla larghezza */
+.descrizione-progetto{
+  text-align: justify;
 }
 
-.projects {
-	text-align: center;
-	padding: 50px 20px;
-	background-color: #edf2f4;
+.carousel{
+	width: 50%;
+	background-color: none;
+	padding: 1%;
 }
 
-@media (max-width: 768px) { /* Media query per smartphone (larghezza max di 480px) */
-	 .projects h1 {
-		font-size: 36px;
-		color: #2b2d42;
-		margin-bottom: 20px;
-	}
+.carousel-images img{
+	width: 40%;
+	background-color: none;
+  border: 2px solid none;
+  border-radius: 45px;
+}
 
-	.projects p {
-		font-size: 18px;
-		max-width: 700px;
-		margin: 0 auto;
-		color: #333;
-	}
+.titolo-progetto{
+	font-size: 24px;
+	font-weight: bold;
+	color: #2b2d42;
+}
 
-	/* Stile per ogni singolo progetto */
-	.project {
-		background-color: #fff;
-		padding: 40px;
-		margin: 20px 0;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		border-radius: 10px;
-		text-align: left;
+@media (max-width: 1000px) { /* 768pxMedia query per tablet e tell(larghezza max di 768px) */
+	.contenitore{
+		width: 85%;
+		margin-left: 7.5%;
+	  display: flex;
+	  flex-flow: column;
+	  text-align: center;
+		border: 1px solid none;
+		border-radius: 60px;
+		padding: 5px;
 	}
 
 	.project{
 		width: 100%;
+		text-align: center;
+		background-color: none;
+		border: 1px solid none;
+		border-radius: 60px;
+	}
+
+	.carousel{
+		width: 100%;
+		background-color: none;
+		padding: 5%;
+	}
+
+	.carousel-images img{
+		width: 100%;
+		background-color: none;
+	  border: 2px solid none;
+	  border-radius: 60px;
+	}	
+
+	.projects h1 {
+    	font-size: 24px;
 	}
 
 	.project h2 {
-		font-size: 28px;
+    	font-size: 20px;
+	}
+
+	.carousel-images img {
+    	min-width: 100%;
+	}
+
+	.prev, .next {
+    	font-size: 16px;
+	}
+	.titolo-progetto{
+		font-size: 24px;
+		font-weight: bold;
 		color: #2b2d42;
-		margin-bottom: 15px;
 	}
-
-	.project p {
-		font-size: 16px;
-		color: #555;
-		margin-bottom: 15px;
-		line-height: 1.8;
-	}
-}
-
-.projects h1 {
-	font-size: 36px;
-	color: #2b2d42;
-	margin-bottom: 20px;
-}
-
-.projects p {
-	font-size: 18px;
-	max-width: 700px;
-	margin: 0 auto;
-	color: #333;
-}
-
-/* Stile per ogni singolo progetto */
-.project {
-	background-color: blue;
-	padding: 40px;
-	margin: 20px 0;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-	border-radius: 10px;
-	text-align: left;
-  	width: 50%;
-}
-
-.project{
-	width: 100%;
-}
-
-.project h2 {
-	font-size: 28px;
-	color: #2b2d42;
-	margin-bottom: 15px;
-}
-
-.project p {
-	font-size: 16px;
-	color: #555;
-	margin-bottom: 15px;
-	line-height: 1.8;
-}
-
-/* Stile per il carosello */
-.carousel {
-	position: relative;
-	width: 40%;
-	margin: 20px 0;
-}
-
-.carousel-images {
-	display: flex;
-	overflow: hidden;
-	border-radius: 10px;
-}
-
-.carousel-images img {
-	min-width: 100%;
-	transition: transform 0.5s ease-in-out;
-}
-
-.carousel-images img {	/* Media query per pc*/
-  width: 45%;  /* Assicurati che le immagini occupino l'intero contenitore */
-  height: auto; /* Mantieni proporzioni corrette */
-}
-
-		
-@media (max-width: 768px) { /* Media query per tablet (larghezza max di 768px) */
-  .carousel-images img {
-    width: 65%;  /* Rimpicciolisci leggermente l'immagine sui tablet */
-    height: auto;
-  }
-}
-
-@media (max-width: 480px) { /* Media query per smartphone (larghezza max di 480px) */
-  .carousel-images img {
-    width: 100%;  /* Puoi anche renderle leggermente più piccole se necessario */
-    height: auto;
-  }
-}
-
-.prev, .next {
-	position: absolute;
-	top: 50%;
-	transform: translateY(-50%);
-	background-color: rgba(0, 0, 0, 0.5);
-	color: white;
-	padding: 10px;
-	border: none;
-	cursor: pointer;
-	border-radius: 50%;
-	font-size: 20px;
-}
-
-.prev {
-	left: 10px;
-}
-
-.next {
-	right: 10px;
-}
-
-/* Dots per il carosello */
-.dots {
-	text-align: center;
-	margin-top: 10px;
-}
-
-.dot {
-	height: 15px;
-	width: 15px;
-	margin: 0 5px;
-	background-color: #bbb;
-	border-radius: 50%;
-	display: inline-block;
-	transition: background-color 0.6s ease;
-}
-
-.dot.active {
-	background-color: #717171;
 }
 
 /* Footer */
@@ -294,41 +208,5 @@ footer p {
 	font-size: 14px;
 }
 
-/* Responsive design */
-@media (max-width: 768px) {
-	.projects h1 {
-    	font-size: 30px;
-	}
-
-	.project h2 {
-    	font-size: 24px;
-	}
-
-	.carousel-images img {
-    	min-width: 100%;
-	}
-
-	.prev, .next {
-    	font-size: 18px;
-	}
-}
-
-@media (max-width: 480px) {
-	.projects h1 {
-    	font-size: 24px;
-	}
-
-	.project h2 {
-    	font-size: 20px;
-	}
-
-	.carousel-images img {
-    	min-width: 100%;
-	}
-
-	.prev, .next {
-    	font-size: 16px;
-	}
-}
 
 
