@@ -337,10 +337,40 @@ body {
 				font-weight: 500;
 				z-index: 2;
 			}
+.div-contenitore-collegamento{
+	width: 100%;
+	margin-top: 4%;
+	margin-bottom: 2%;
+	padding: 3%;
+	background-color: none;
+}
+	.div-collegamento{
+		font-size: 40px;
+	}
+		.tasto-collegamento{
+			font-size: 20px;
+			margin-left: 40%;
+			margin-right: 40%;
+			margin-top: 3%;
+			padding: 1%;
+			border-radius: 30px;
+			border: 3px solid #22577A;
+			color: #22577A;			
+			transition-duration: 0.4s;
+		}
+		.tasto-collegamento:hover{
+			color: #22577A;
+			background-color: #80ED99;
+			transition-duration: 0.4s;
+		}
 
 @media (max-width: 1090px){
+	.titolo-pagina{
+		font-size: 40px;
+	}
 	.titolo-pagina p{
 		font-weight: lighter;
+		font-size: 18px;
 	}
 	.titolo-servizio{
 		letter-spacing: 1px;		
@@ -367,6 +397,14 @@ body {
 		margin-left: 20%;
 		margin-top: 5%;
 	}
+	.div-collegamento{
+		font-size: 28px;
+	}
+		.tasto-collegamento{
+			font-size: 16px;
+			margin-left: 30%;
+			margin-right: 30%;
+		}
 }
 
 

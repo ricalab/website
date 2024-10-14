@@ -164,26 +164,27 @@ nav {
 	width: 100%;
 	padding: 1%;
 	font-size: 18px;
+	margin-bottom: 5%;
 }
 
-.testo{
-	background-color: #e9e7f5;
-	width: 50%;
-  	float: left;
-	padding: 5%;
-	border-radius: 40px 40px 40px 40px;
-}
-.titolo{
-	font-size: 50px;
-	font-weight: bold;
-	color: white;
-  	text-align: center;
-	background-color: none;
-	width: 50%;
-	float: right;
-	padding: 5%;
-	border-radius: 40px 40px 40px 40px;
-}
+	.testo{
+		background-color: #e9e7f5;
+		width: 50%;
+	  	float: left;
+		padding: 5%;
+		border-radius: 40px 40px 40px 40px;
+	}
+	.titolo{
+		font-size: 80px;
+		font-weight: bold;
+		color: white;
+	  	text-align: center;
+		background-color: none;
+		width: 50%;
+		float: right;
+		padding: 5%;
+		border-radius: 40px 40px 40px 40px;
+	}
 
 .div-contenitore-tasto{
   	text-align: center;
@@ -192,43 +193,44 @@ nav {
     align-items: center;
 	width: 90%;
 	margin-left: 5%;
-	margin-top: 3%;
+	margin-top: 2%;
+	margin-bottom: 3%;
 	border-radius: 40px;
 }
 
-.indirizzamento{
-	width: 100%;
-	text-align: center;
-}
+	.indirizzamento{
+		width: 100%;
+		text-align: center;
+	}
 
-.indirizzamento p{
-	font-size: 30px;
-	margin-top: 1%;
-}
+	.indirizzamento p{
+		font-size: 30px;
+		margin-top: 1%;
+	}
 
-.tasto-servizi{
-	font-size: 20px;
-	background-color: #2b2d42;
-	color: white;
-	width: 15%;
-	padding: 1%;
-	border-radius: 30px;
-	margin-left: 42.5%;
-	margin-top: 1%;
-	margin-bottom: 1%;
-	transition: 0.5s;
-	border: 3px solid #2b2d42;
-}
+	.tasto-servizi{
+		font-size: 20px;
+		background-color: #2b2d42;
+		color: white;
+		width: 15%;
+		padding: 1%;
+		border-radius: 30px;
+		margin-left: 42.5%;
+		margin-top: 1%;
+		margin-bottom: 1%;
+		transition: 0.5s;
+		border: 3px solid #2b2d42;
+	}
 
-.indirizzamento a{
-	text-decoration: none;
-}
+	.indirizzamento a{
+		text-decoration: none;
+	}
 
-.tasto-servizi:hover{
-	background-color: white;
-	color: #2b2d42;
-	transition: 0.5s;
-}
+	.tasto-servizi:hover{
+		background-color: white;
+		color: #2b2d42;
+		transition: 0.5s;
+	}
 
 
 

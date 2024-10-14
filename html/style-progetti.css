@@ -133,6 +133,25 @@ nav {
 
 /* Stile dei progetti */
 
+.presentazione-pagina{
+	width: 100%;
+	background-color: none;
+	text-align: center;
+	padding: 4%;
+	margin-top: 3%;
+	margin-bottom: 3%;
+	color: #22577A;
+}
+	.titolo{
+		font-size: 50px;
+		font-weight: bold;
+		margin-bottom: 0.5%;
+	}
+	.sottotitolo{
+		font-size: 20px;
+	}
+
+
 .contenitore{
   text-align: center;
 	width: 80%;
@@ -140,43 +159,114 @@ nav {
   display: flex;
   flex-flow: row;
   text-align: center;
-  background-color: #e0e1eb;
+  background-color: #5eb1bf;
 	border: 1px solid none;
 	border-radius: 60px;
 	padding: 5px;
+	margin-bottom: 5%;
 }
-
-.project{
-	width: 50%;
-	background-color: #e0e1eb;
-	border-radius: 60px;
-	padding: 20px;
-}
-
-.descrizione-progetto{
-  text-align: justify;
-}
-
-.carousel{
-	width: 50%;
-	background-color: none;
-	padding: 1%;
-}
-
-.carousel-images img{
-	width: 40%;
-	background-color: none;
-  border: 2px solid none;
-  border-radius: 45px;
-}
-
-.titolo-progetto{
-	font-size: 24px;
-	font-weight: bold;
-	color: #2b2d42;
-}
-
-@media (max-width: 1000px) { /* 768pxMedia query per tablet e tell(larghezza max di 768px) */
+	.project{
+		width: 40%;
+		background-color: #CDEDF6;
+		border-radius: 60px;
+		margin-left: 10%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		display: grid;
+ 	 	grid-template-columns: auto;
+	}
+		.titolo-progetto{
+			margin-top: 8%;
+			color: #012A4A;
+			font-size: 30px;
+			font-weight: bold;
+		}
+		.descrizione-progetto{
+			width: 70%;
+			margin-top: 5%;
+			margin-left: 15%;
+		  text-align: justify;
+		  font-size: 18px;
+		  letter-spacing: 0.5px;
+		  padding: 3%;
+		  background-color: none;
+		}
+		.image img{
+			width: 50%;
+			padding: 2%;
+			border-radius: 100px;
+		}
+	.project-3D{
+		width: 170%;
+		background-color: #CDEDF6;
+		border-radius: 60px;
+		margin-left: 10%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		display: grid;
+ 	 	grid-template-columns: auto;
+	}
+		.descrizione-progetto-3D{
+			width: 70%;
+			margin-top: 5%;
+			margin-left: 15%;
+		  text-align: justify;
+		  font-size: 18px;
+		  letter-spacing: 0.5px;
+		  padding: 3%;
+		  background-color: none;
+		}
+		.image_visualizzatore img{
+			float: right;
+			width: 65%;
+			height: 80%;
+			margin-right: 16%;
+			padding: 2%;
+			margin-top: 7%;
+			border-radius: 100px;
+			background-color: none;
+		}
+	.tasto{
+		width: 30%;
+		margin-bottom: 5%;
+		margin-left: 35%;
+		border: 3px solid #012A4A;
+		padding: 2%;
+		height: 45px;
+		border-radius: 20px;
+		transition-duration: 0.5s;
+		color: #012A4A;
+	}
+		.tasto a{
+			color: #012A4A;
+		}
+		.tasto:hover{
+			transition-duration: 0.5s;
+			color: white;
+			background-color: #22577A;
+		}
+		.tasto:hover a{
+			color: white;
+		}
+	.tasto{ 
+		display: inline-block;
+	}
+	.tasto1{ 
+		display: none;
+	}
+	.collegamento{
+		text-decoration: none;
+		color: #22577A;
+	}
+@media (max-width: 1500px) { /* 768pxMedia query per tablet e tell(larghezza max di 768px) */
+	.titolo{
+		font-size: 40px;
+		font-weight: bold;
+		margin-bottom: 0.5%;
+	}
+	.sottotitolo{
+		font-size: 20px;
+	}
 	.contenitore{
 		width: 85%;
 		margin-left: 7.5%;
@@ -187,48 +277,80 @@ nav {
 		border-radius: 60px;
 		padding: 5px;
 	}
-
 	.project{
-		width: 100%;
+		width: 90%;
+		margin-left: 5%;
+		padding-bottom: 5%;
 		text-align: center;
 		background-color: none;
 		border: 1px solid none;
 		border-radius: 60px;
-	}
-
-	.carousel{
-		width: 100%;
-		background-color: none;
-		padding: 5%;
-	}
-
-	.carousel-images img{
-		width: 100%;
-		background-color: none;
-	  border: 2px solid none;
-	  border-radius: 60px;
-	}	
-
-	.projects h1 {
-    	font-size: 24px;
-	}
-
-	.project h2 {
-    	font-size: 20px;
-	}
-
-	.carousel-images img {
-    	min-width: 100%;
-	}
-
-	.prev, .next {
-    	font-size: 16px;
 	}
 	.titolo-progetto{
 		font-size: 24px;
 		font-weight: bold;
 		color: #2b2d42;
 	}
+	.descrizione-progetto{
+		margin-left: 10%;
+		width: 80%;
+		padding-left: 0;
+		padding-right: 0%;
+	}
+	.project-3D{
+		width: 90%;
+		background-color: #CDEDF6;
+		border-radius: 60px;
+		margin-left: 5%;
+		margin-top: 2%;
+		margin-bottom: 2%;
+		padding-bottom: 5%;
+		display: grid;
+ 	 	grid-template-columns: auto;
+	}
+		.descrizione-progetto-3D{
+			width: 80%;
+			margin-top: 5%;
+			margin-left: 10%;
+		  text-align: justify;
+		  font-size: 18px;
+		  letter-spacing: 0.5px;
+		  padding: 3%;
+		  background-color: none;
+		}
+	.image img{
+		width: 80%;
+		padding: 2%;
+		border-radius: 80px;
+	}
+	.tasto{ 
+		display: none;
+	}
+	.tasto1{ 
+		display: inline-block;
+	}
+	.tasto1{
+		width: 50%;
+		margin-left: 25%;
+		margin-top: 5%;
+		margin-bottom: 5%;
+		padding: 2%;
+		border-radius: 20px;
+		transition-duration: 0.5s;
+		border: 3px solid #012A4A;
+		color: #012A4A;
+	}
+		.tasto1:hover{
+			transition-duration: 0.5s;
+			color: white;
+			background-color: #22577A;
+		}
+		.tasto1 a{
+			color: #012A4A;
+		}
+		.tasto1:hover a{
+			color: white;
+		}
 }
 
 /* Footer */
@@ -237,7 +359,6 @@ footer {
 	color: #edf2f4;
 	text-align: center;
 	padding: 20px;
-	position: relative;
 	width: 100%;
 	bottom: 0;
 }
