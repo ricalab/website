@@ -47,43 +47,73 @@
             	</div>
             	<div class="elenco-servizi">
 	            	<div class="servizio">
-	            		<div class="testo-servizio">
+	            		<div class="testo-servizio" id="testo_servizio">
 	            			Consulenza per la realizzazione di prodotti
 	            		</div>
-	            		<div class="tasto">
+	            		<div class="tasto" id="tasto" onclick="cambia_testo('div_descrizione','tasto','testo_servizio','exit')">
 	            			Scopri di più 
 	            		</div>
+	            		<div id="exit" class="exit" onclick="cambia_testo('div_descrizione','tasto','testo_servizio','exit')">
+	            			<p>x</p>
+	            		</div>
+	            		<div class="div-descrizione" id="div_descrizione">
+	            			Offriamo supporto completo per la progettazione di prodotti completamente personalizzabili. Dall’ideazione alla fase di sviluppo, forniamo consulenza tecnica e creativa per garantire che ogni dettaglio sia ottimizzato in base alle esigenze specifiche del progetto.
+	            		</div>
 	            	</div>
 	            	<div class="servizio">
-	            		<div class="testo-servizio">
+	            		<div class="testo-servizio" id="testo_servizio1">
 	            			Prototipazione rapida
 	            		</div>
-	            		<div class="tasto">
-							Scopri di più 
+	            		<div class="tasto" id="tasto1" onclick="cambia_testo('div_descrizione1','tasto1','testo_servizio1','exit1')">
+	            			Scopri di più 
+	            		</div>
+	            		<div id="exit1" class="exit" onclick="cambia_testo('div_descrizione1','tasto1','testo_servizio1','exit1')">
+	            			<p>x</p>
+	            		</div>
+	            		<div class="div-descrizione" id="div_descrizione1">
+	            			Utilizzo di stampanti 3D, attrezzature da metalmeccanica e laser per la creazione rapida di prototipi funzionanti e modelli di prova, riducendo i tempi di sviluppo e ottimizzando il design.
 	            		</div>
 	            	</div>
 	            	<div class="servizio">
-	            		<div class="testo-servizio">
-	            			Integrazione di Intelligenza Artificiale
+	            		<div class="testo-servizio" id="testo_servizio2">
+	            			Integrazione di Intelligenza Artificiale 
 	            		</div>
-	            		<div class="tasto">
-							Scopri di più 
+	            		<div class="tasto" id="tasto2" onclick="cambia_testo('div_descrizione2','tasto2','testo_servizio2','exit2')">
+	            			Scopri di più 
 	            		</div>
-	            	</div>
-	            	<div class="servizio">
-	            		<div class="testo-servizio">
-	            			Progettazione di Interfacce e Soluzioni Digitali
+	            		<div id="exit2" class="exit" onclick="cambia_testo('div_descrizione2','tasto2','testo_servizio2','exit2')">
+	            			<p>x</p>
 	            		</div>
-	            		<div class="tasto">
-							Scopri di più 
+	            		<div class="div-descrizione" id="div_descrizione2">
+	            			Sviluppo di prodotti innovativi che integrano intelligenza artificiale per migliorare le funzionalità e offrire nuove possibilità creative nei settori del design e della produzione artigianale.
 	            		</div>
 	            	</div>
 	            	<div class="servizio">
-	            		<div class="testo-servizio">
-	            			Sviluppo di schede elettroniche e codice personalizzato
+	            		<div class="testo-servizio" id="testo_servizio3">
+	            			Progettazione di Interfacce e Soluzioni Digitali  
 	            		</div>
-	            		<div class="tasto">
-							Scopri di più
+	            		<div class="tasto" id="tasto3" onclick="cambia_testo('div_descrizione3','tasto3','testo_servizio3','exit3')">
+	            			Scopri di più 
+	            		</div>
+	            		<div id="exit3" class="exit" onclick="cambia_testo('div_descrizione3','tasto3','testo_servizio3','exit3')">
+	            			<p>x</p>
+	            		</div>
+	            		<div class="div-descrizione" id="div_descrizione3">
+	            			Creazione di interfacce utente e soluzioni digitali per prodotti artigianali e su misura, inclusa l'integrazione di sensori e sistemi di controllo digitali nei prodotti di design.
+	            		</div>
+	            	</div>
+	            	<div class="servizio">
+	            		<div class="testo-servizio" id="testo_servizio4">
+							Sviluppo di schede elettroniche e codice personalizzato 
+	            		</div>
+	            		<div class="tasto" id="tasto4" onclick="cambia_testo('div_descrizione4','tasto4','testo_servizio4','exit4')">
+	            			Scopri di più 
+	            		</div>
+	            		<div id="exit4" class="exit" onclick="cambia_testo('div_descrizione4','tasto4','testo_servizio4','exit4')">
+	            			<p>x</p>
+	            		</div>
+	            		<div class="div-descrizione" id="div_descrizione4">
+	            			Offriamo un servizio specializzato nella creazione di codice e nello sviluppo di schede elettroniche su misura per progetti specifici. Grazie alla nostra esperienza in programmazione e hardware, garantiamo risultati efficienti e affidabili, perfettamente adattati alle esigenze del cliente.
 	            		</div>
 	            	</div>
 	            </div>
@@ -154,6 +184,30 @@
     	<p>© 2024 Ricalab. Tutti i diritti riservati.</p>
 	</footer>
 </body>
+
+<script>
+	document.getElementById("div_descrizione").addEventListener("tasto", cambia_testo);
+
+	function cambia_testo(x, y, z, q) {
+		var testo_descrizione = document.getElementById(x);
+		var tasto = document.getElementById(y);
+		var testo_servizio = document.getElementById(z);
+		var exit = document.getElementById(q);
+		if (testo_descrizione.style.display === "none") {
+		    testo_descrizione.style.display = "block";
+		    testo_servizio.style.display = "none";
+		    tasto.style.display = "none";
+		    exit.style.display = "block";
+		}
+		else{
+		    testo_descrizione.style.display = "none";
+		    testo_servizio.style.display = "block";
+		    tasto.style.display = "block";
+		    exit.style.display = "none";
+		}
+	}
+</script>
+
 </html>
 
 

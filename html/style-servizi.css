@@ -148,7 +148,7 @@ nav {
 			border: 5px solid #C7F9CC;
 			border-radius: 30px;
 			width: 20%;
-			height: 230px;
+			height: 300px;
 			margin: 1%;
 			padding-top: 1%;
 			padding-bottom: 0.5%;
@@ -156,7 +156,36 @@ nav {
 			box-shadow: 8px 8px;
 			
 		}
+			.exit{
+				text-align: center;
+				font-size: 15px;
+				font-weight: bold;
+				background-color: #ff5d73;
+				border-radius: 25px;
+				display: none;
+				color: white;
+				width: 25px;
+				height: 25px;
+				margin-left: 5%;
+				transition-duration: 0.5s;
+			}
+			.exit p{
+  				vertical-align: middle;
+			}
+			.exit:hover{
+				background-color: red;
+				transition-duration: 0.5s;
+			}
+			.div-descrizione{
+				text-align: justify;
+				display: none;
+				z-index: 3;
+				font-size: 15px;
+				width: 100%;
+				padding: 5%;
+			}
 			.testo-servizio{
+				z-index: 1;
 				font-size: 20px;
 				font-weight: none;
 				width: 100%;
@@ -185,6 +214,7 @@ nav {
 				border-color: #80ED99;
 				transition-duration: 0.4s;
 				font-weight: 500;
+				z-index: 2;
 			}
 			.tasto2{
 				background-color: #C7F9CC;
