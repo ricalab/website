@@ -318,6 +318,9 @@ nav {
 		  padding: 3%;
 		  background-color: none;
 		}
+		.image_visualizzatore img{
+			border-radius: 40px;
+		}
 	.image img{
 		width: 80%;
 		padding: 2%;
