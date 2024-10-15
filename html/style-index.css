@@ -132,8 +132,8 @@ nav {
 
 /* Hero section */
 .hero {
-	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('hero-image.jpg') no-repeat center center/cover;
-	height: 80vh;
+	background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('sfondo_home1.jpg') no-repeat center center/cover;
+	height: 92vh;
 	display: flex;
 	align-items: center;
 	justify-content: center;
@@ -145,7 +145,6 @@ nav {
 .hero h1 {
 	font-size: 64px;
 	margin-bottom: 20px;
-	text-transform: uppercase;
 	letter-spacing: 2px;
 	animation: fadeIn 1.5s ease-in-out;
 }
@@ -154,6 +153,11 @@ nav {
 	font-size: 24px;
 	margin-bottom: 40px;
 	animation: fadeIn 2s ease-in-out;
+}
+.hero-text img{
+	animation: fadeIn 1.5s ease-in-out;
+	border-radius: 50px;
+	width: 15%;
 }
 
 .btn {
