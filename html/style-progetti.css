@@ -154,25 +154,24 @@ nav {
 
 .contenitore{
   text-align: center;
-	width: 80%;
-	margin-left: 10%;
+	width: 100%;
+	margin-left: 0%;
   display: flex;
   flex-flow: row;
   text-align: center;
-  background-color: #5eb1bf;
+  background-color: #B7E4C7;
 	border: 1px solid none;
-	border-radius: 60px;
-	padding: 5px;
+	border-radius: 0px;
+	padding: opx;
 	margin-bottom: 5%;
 }
 	.project{
 		width: 40%;
-		background-color: #CDEDF6;
-		border-radius: 60px;
+		background-color: #95D5B2;
+		border-radius: 0px;
 		margin-left: 10%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		display: grid;
+		margin-top: 0%;
+		margin-bottom: 0%;
  	 	grid-template-columns: auto;
 	}
 		.titolo-progetto{
@@ -180,30 +179,38 @@ nav {
 			color: #012A4A;
 			font-size: 30px;
 			font-weight: bold;
+			background-color: none;
+			padding: 5px;
 		}
 		.descrizione-progetto{
 			width: 70%;
-			margin-top: 5%;
+			margin-top: 8%;
 			margin-left: 15%;
 		  text-align: justify;
-		  font-size: 18px;
+		  font-size: 16px;
 		  letter-spacing: 0.5px;
 		  padding: 3%;
 		  background-color: none;
 		}
-		.image img{
+		.image{
+			margin-top: 1%;
+			margin-bottom: 1%;
 			width: 50%;
-			padding: 2%;
-			border-radius: 100px;
+			margin-right: 12.5%;
+		}
+		.image img{
+			float: right;
+			width: 50%;
+			padding: 0%;
+			border-radius: 40px;
 		}
 	.project-3D{
-		width: 170%;
-		background-color: #CDEDF6;
-		border-radius: 60px;
+		width: 40%;
+		background-color: #95D5B2;
+		border-radius: 0px;
 		margin-left: 10%;
-		margin-top: 2%;
-		margin-bottom: 2%;
-		display: grid;
+		margin-top: 0%;
+		margin-bottom: 0%;
  	 	grid-template-columns: auto;
 	}
 		.descrizione-progetto-3D{
@@ -211,25 +218,28 @@ nav {
 			margin-top: 5%;
 			margin-left: 15%;
 		  text-align: justify;
-		  font-size: 18px;
+		  font-size: 16px;
 		  letter-spacing: 0.5px;
 		  padding: 3%;
 		  background-color: none;
 		}
+		.image_visualizzatore{
+			margin-top: 1%;
+			margin-bottom: 1%;
+			width: 50%;
+			margin-right: 12.5%;
+		}
 		.image_visualizzatore img{
 			float: right;
 			width: 65%;
-			height: 80%;
-			margin-right: 16%;
-			padding: 2%;
-			margin-top: 7%;
-			border-radius: 100px;
-			background-color: none;
+			margin-top: 8.5%;
+			border-radius: 40px;
 		}
 	.tasto{
 		width: 30%;
 		margin-bottom: 5%;
-		margin-left: 35%;
+		margin-left: 0%;
+		margin-top: 25%;
 		border: 3px solid #012A4A;
 		padding: 2%;
 		height: 45px;
@@ -268,23 +278,26 @@ nav {
 		font-size: 20px;
 	}
 	.contenitore{
-		width: 85%;
-		margin-left: 7.5%;
+		width: 100%;
+		margin-left: 0%;
+		margin-bottom: 12%;
 	  display: flex;
 	  flex-flow: column;
 	  text-align: center;
 		border: 1px solid none;
-		border-radius: 60px;
-		padding: 5px;
+		border-radius: 0px;
+		padding: 0px;
 	}
 	.project{
-		width: 90%;
-		margin-left: 5%;
+		margin-top: 0%;
+		margin-bottom: 8%;
+		width: 100%;
+		margin-left: 0%;
 		padding-bottom: 5%;
 		text-align: center;
-		background-color: none;
-		border: 1px solid none;
-		border-radius: 60px;
+		background-color: #95D5B2;
+		border: 1px solid #95D5B2;
+		border-radius: 0px;
 	}
 	.titolo-progetto{
 		font-size: 24px;
@@ -298,10 +311,11 @@ nav {
 		padding-right: 0%;
 	}
 	.project-3D{
-		width: 90%;
-		background-color: #CDEDF6;
-		border-radius: 60px;
-		margin-left: 5%;
+		width: 100%;
+		background-color: #95D5B2;
+		border-radius: 0px;
+		border:0px;
+		margin-left: 0%;
 		margin-top: 2%;
 		margin-bottom: 2%;
 		padding-bottom: 5%;
@@ -316,13 +330,24 @@ nav {
 		  font-size: 18px;
 		  letter-spacing: 0.5px;
 		  padding: 3%;
+		  border-radius: 0px;
 		  background-color: none;
+		}		
+		.image_visualizzatore{
+			width: 100%;
 		}
 		.image_visualizzatore img{
 			border-radius: 40px;
+			width: 85%;
+			margin-right: 8%;
+			margin-top: 2%;
 		}
-	.image img{
+	.image{
 		width: 80%;
+		margin-left: 10%;
+	}
+	.image img{
+		width: 100%;
 		padding: 2%;
 		border-radius: 80px;
 	}
