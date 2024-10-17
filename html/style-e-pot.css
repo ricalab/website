@@ -7,7 +7,7 @@ body {
 
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('images/background.jpg') center/cover no-repeat;
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('sfondo_e_pot.jpg') center/cover no-repeat;
     color: #fff;
     display: flex;
     flex-direction: column;
@@ -27,7 +27,7 @@ body {
 .logo {
     width: 100px;
     height: auto;
-    border-radius: 40px;
+    border-radius: 60px;
 }
 
 .hero-content {
@@ -80,12 +80,60 @@ body {
     margin: 10px;
 }
 
+
 .image img {
     width: 100%;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.6s ease-out;
 }
+.vaso-vero-info{
+    display: table-row;
+}
+    
+    .foto-vaso{
+        width: 80%;
+        margin-left: 10%;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: transform 0.6s ease-out;
+    }
+        .testo-info{
+            margin-top: 15%;
+            width: 80%;
+            background-color: none;
+            text-align: center;
+            margin-left: 10%;
+            padding-left: 0%;
+            text-align: center;
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+            .testo-info p{
+                width: 80%;
+                margin-left: 10%;
+            }
+        .a-download{
+            text-decoration: none;
+            color: #1B4332;
+        }
+        .download{
+            padding: 2%;
+            background-color: none;
+            margin-left: 15%;
+            border-radius: 15px;
+            margin-top: 10%;
+            margin-bottom: 20%;
+            border: 3px solid #1B4332;
+            width: 70%;
+            transition-duration: 0.5s;
+            bottom: 10% ;
+            text-align: center;
+        }
+        .download:hover{
+            background-color: #1B4332;
+            transition-duration: 0.5s;
+            color: white;
+        }
 
 footer {
     background-color: #333;
@@ -137,6 +185,54 @@ footer {
     .footer-logo {
         width: 100px;
     }
+    .vaso-vero-info{
+        width: 80%;
+        margin-left: 10%;
+        background-color: none;
+        margin-top: 100px;
+        margin-bottom: 20%;
+        display: inline-flex;
+        padding: 30px;
+        border-radius: 30px;
+    }  
+        .foto-vaso{
+            width: 33.3%;
+            float: left;
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.6s ease-out;
+        }
+        .testo-info{
+            width: 58.6%;
+            background-color: none;
+            text-align: center;
+            margin: 4%;
+            height: auto;
+            padding-left: 0%;   
+
+            transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+        }
+            .testo-info p{
+                width: 80%;
+                margin-left: 10%;
+            }
+            .download{
+                padding: 2%;
+                background-color: none;
+                margin-left: 29%;
+                border-radius: 15px;
+                margin-top: 20%;
+                border: 3px solid #1B4332;
+                width: 40%;
+                transition-duration: 0.5s;
+                bottom: 10% ;
+            }
+            .download:hover{
+                background-color: #1B4332;
+                transition-duration: 0.5s;
+                color: white;
+            }
+
 }
 
 @media (min-width: 1200px) {
