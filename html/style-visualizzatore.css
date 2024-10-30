@@ -2,7 +2,7 @@ body {
     font-family: Verdana, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
 }
 
 .hero {
@@ -94,27 +94,45 @@ body {
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     transition: transform 0.6s ease-out;
 }
-.testo-descrittivo{
-    background-color: none;
-    font-size: 20px;
-    padding: 5%;
+.feature-content_2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     text-align: center;
-    margin-top: 15%;
-    margin-bottom: 15%;
+    width: 100%;
+    margin: 0;
+    gap: 20px;
 }
-.vaso-vero-info{
-    display: table-row;
+    .testo-descrittivo{
+        background-color: #002347;
+        font-size: 20px;
+        color: white;
+        padding: 5%;
+        text-align: center;
+        margin-top: 15%;
+        margin-bottom: 15%;
+    }
+    .titolo-descrizione{
+        font-size: 30px;
+    }
+    .testo-descrittivo-p{
+        font-size: 18px;
+    }
+.div-info{
+    background-color: #002347;
+    width: 100%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    max-height: 350px;
 }
     
     .foto-vaso{
-        width: 80%;
-        margin-left: 10%;
-        border-radius: 15px;
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
         transition: transform 0.6s ease-out;
     }
         .testo-info{
-            margin-top: 15%;
+            color: white;
+            margin-top: 10%;
             width: 80%;
             background-color: none;
             text-align: center;
@@ -124,33 +142,33 @@ body {
             transition: opacity 0.6s ease-out, transform 0.6s ease-out;
         }
             .testo-info p{
-                width: 80%;
-                margin-left: 10%;
+                width: 100%;
             }
         .a-download{
             text-decoration: none;
-            color: #1B4332;
+            color: white;
         }
             .div-tasto-dwnl{
                 width: 100%;
                 text-align: center;
+                background-color: #002347;
             }
                 .download{
                     padding: 1%;
                     background-color: none;
                     border-radius: 25px;
                     margin-top: 8%;
-                    border: 3px solid #023e8a;
+                    border: 3px solid white;
                     width: 70%;
-                    margin-left: 15%;
+                    margin-left: 14%;
                     transition-duration: 0.5s;
                     margin-bottom: 20%;
                 }
                 .download:hover{
-                    background-color: #03045e;
-                    border-color: #03045e;
+                    background-color: white;
+                    border-color: white;
                     transition-duration: 0.5s;
-                    color: white;
+                    color: #1B4332;
                 }
 
 footer {
@@ -244,23 +262,24 @@ footer {
             .div-tasto-dwnl{
                 width: 100%;
                 text-align: center;
+                background-color: #002347;
             }
                 .download{
-                    padding: 1%;
+                    padding: 0.6%;
                     background-color: none;
                     border-radius: 25px;
-                    margin-top: 0%;
-                    border: 3px solid #023e8a;
-                    width: 30%;
-                    margin-left: 35%;
+                    margin-top: 1%;
+                    border: 3px solid white;
+                    width: 25%;
+                    margin-left: 36.5%;
                     transition-duration: 0.5s;
-                    bottom: 10% ;
+                    margin-bottom: 10%;
                 }
                 .download:hover{
-                    background-color: #03045e;
-                    border-color: #03045e;
+                    background-color: white;
+                    border-color: white;
                     transition-duration: 0.5s;
-                    color: white;
+                    color: #1B4332;
                 }
 
 }

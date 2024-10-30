@@ -153,13 +153,13 @@ nav {
 
 
 .contenitore{
-  text-align: center;
+  	text-align: center;
 	width: 100%;
 	margin-left: 0%;
-  display: flex;
-  flex-flow: row;
-  text-align: center;
-  background-color: #B7E4C7;
+  	display: flex;
+  	flex-flow: row;
+  	text-align: center;
+  	background-color: #146593;
 	border: 1px solid none;
 	border-radius: 0px;
 	padding: opx;
@@ -167,16 +167,17 @@ nav {
 }
 	.project{
 		width: 40%;
-		background-color: #95D5B2;
+		background-color: #22577A;
 		border-radius: 0px;
 		margin-left: 10%;
 		margin-top: 0%;
 		margin-bottom: 0%;
  	 	grid-template-columns: auto;
+ 	 	color: white;
 	}
 		.titolo-progetto{
 			margin-top: 8%;
-			color: #012A4A;
+			color: white;
 			font-size: 30px;
 			font-weight: bold;
 			background-color: none;
@@ -209,8 +210,9 @@ nav {
 			transition-duration: 0.5s;
 		}
 	.project-3D{
+ 	 	color: white;
 		width: 40%;
-		background-color: #95D5B2;
+		background-color: #22577A;
 		border-radius: 0px;
 		margin-left: 10%;
 		margin-top: 0%;
@@ -244,20 +246,20 @@ nav {
 		margin-bottom: 5%;
 		margin-left: 0%;
 		margin-top: 25%;
-		border: 3px solid #012A4A;
-		padding: 2%;
+		border: 3px solid white;
+		padding: 1.5%;
 		height: 45px;
 		border-radius: 20px;
 		transition-duration: 0.5s;
-		color: #012A4A;
+		color: white;
 	}
 		.tasto a{
 			color: #012A4A;
 		}
 		.tasto:hover{
 			transition-duration: 0.5s;
-			color: white;
-			background-color: #22577A;
+			color: #22577A;
+			background-color: white;
 		}
 		.tasto:hover a{
 			color: white;
@@ -303,14 +305,14 @@ nav {
 		margin-left: 0%;
 		padding-bottom: 5%;
 		text-align: center;
-		background-color: #95D5B2;
-		border: 1px solid #95D5B2;
+		background-color: #22577A;
+		border: 1px solid #22577A;
 		border-radius: 0px;
 	}
 	.titolo-progetto{
 		font-size: 24px;
 		font-weight: bold;
-		color: #2b2d42;
+		color: white;
 	}
 	.descrizione-progetto{
 		margin-left: 10%;
@@ -320,7 +322,7 @@ nav {
 	}
 	.project-3D{
 		width: 100%;
-		background-color: #95D5B2;
+		background-color: #22577A;
 		border-radius: 0px;
 		border:0px;
 		margin-left: 0%;
@@ -334,12 +336,12 @@ nav {
 			width: 80%;
 			margin-top: 5%;
 			margin-left: 10%;
-		  text-align: justify;
-		  font-size: 18px;
-		  letter-spacing: 0.5px;
-		  padding: 3%;
-		  border-radius: 0px;
-		  background-color: none;
+		  	text-align: justify;
+		  	font-size: 18px;
+		  	letter-spacing: 0.5px;
+		  	padding: 3%;
+		  	border-radius: 0px;
+		  	background-color: none;
 		}		
 		.image_visualizzatore{
 			width: 100%;
@@ -373,13 +375,13 @@ nav {
 		padding: 2%;
 		border-radius: 20px;
 		transition-duration: 0.5s;
-		border: 3px solid #012A4A;
-		color: #012A4A;
+		border: 3px solid white;
+		color: white;
 	}
 		.tasto1:hover{
 			transition-duration: 0.5s;
-			color: white;
-			background-color: #22577A;
+			color: #22577A;
+			background-color: white;
 		}
 		.tasto1 a{
 			color: #012A4A;
@@ -391,6 +393,7 @@ nav {
 
 /* Footer */
 footer {
+	margin-top: 20%;
 	background-color: #22577A;
 	color: #edf2f4;
 	text-align: center;
